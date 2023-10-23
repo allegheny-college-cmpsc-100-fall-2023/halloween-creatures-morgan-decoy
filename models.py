@@ -8,3 +8,9 @@ def black_cat(pos, scale):
    ear2 = pyramid( pos = pos + vector(0.25*scale, 0.25*scale, 0), scale = vector(0.5*scale, 0.5*scale, 0.5*scale), color = color.black) #draws right ear
    ear2.rotate(angle = radians(45), axis = vector(0, 0, 1)) #rotates right ear
 
+#define function that draws a pumpkin
+def pumpkin(pos):
+   #img src: https://pva.supply/product/minecraft-jack-o-lantern/
+   p = sphere(pos = pos)  #main pumpkin with jack-o-lantern texture
+   p.texture = 'Minecraft-Jack-O-Lantern.jpg' #assign texture to pumpkin
+   cylinder(pos = pos + vector(0, 1, 0), radius = 0.2, axis = vector(0, 1, 0), color = color.green) #stem

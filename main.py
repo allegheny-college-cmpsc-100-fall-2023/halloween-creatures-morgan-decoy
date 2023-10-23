@@ -11,6 +11,8 @@ moon = sphere(pos = vector(5, 4, 0), radius = 1, color = color.white, emissive =
 def clickFunc():
     if scene.mouse.pos.y > 0:   
         black_cat(scene.mouse.pos, 1)
+    else:
+        pumpkin(scene.mouse.pos)
 
 # while loop that runs continuously   
 while True: 
